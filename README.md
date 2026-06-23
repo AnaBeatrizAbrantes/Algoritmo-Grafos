@@ -3,7 +3,7 @@
 Este repositório contém a implementação prática do Algoritmo de Dijkstra desenvolvida na linguagem C em arquivo único (main.c). 
 O objetivo do projeto é encontrar o caminho mínimo (menor custo) de um vértice de origem para todos os outros nós em um grafo ponderado com pesos não-negativos. O projeto utiliza uma Matriz de Adjacência para a representação do grafo e foi testado utilizando o ambiente de terminal Git Bash.
 
-# Como Compilar
+## Como Compilar
 
 Para rodar este projeto na sua máquina, você precisa ter um compilador C instalado (como o GCC). 
 Siga os passos abaixo no seu terminal:
