@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-#define V 5 // Número de vértices
-#define INF 99999 // infinito para vértices inacessíveis
+#define V 5 // Numero de vertices
+#define INF 99999 // Infinito para vertices inacessiveis
 
 int encontrarMenorDistancia(int dist[], bool visitado[]) {
     int min = INF, min_index;
@@ -16,10 +16,10 @@ int encontrarMenorDistancia(int dist[], bool visitado[]) {
     return min_index;
 }
 
-// O algoritmo de Dijkstra em função
+// O algoritmo de Dijkstra em funcao
 void dijkstra(int grafo[V][V], int origem) {
-    int dist[V];      // menores distâncias
-    bool visitado[V];
+    int dist[V];      // Menores distancias
+    bool visitado[V]; // Array para mapear os vertices ja processados
 
     for (int i = 0; i < V; i++) {
         dist[i] = INF;
@@ -40,12 +40,12 @@ void dijkstra(int grafo[V][V], int origem) {
         }
     }
 
-    // tabela de distâncias resultantes
-    printf("Vértice \t Distância Mínima da Origem (%d)\n", origem);
+    // Tabela de distancias resultantes
+    printf("Vertice \t Distancia Minima da Origem (%d)\n", origem);
     for (int i = 0; i < V; i++) {
         printf("%d \t\t ", i);
         if (dist[i] == INF) {
-            printf("Inacessível\n");
+            printf("Inacessivel\n");
         } else {
             printf("%d\n", dist[i]);
         }
